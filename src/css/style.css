@@ -1,4 +1,4 @@
-
+@import url('https://fonts.googleapis.com/css2?family=Oswald:wght@200..700&display=swap');
 
 /* Tema padrão */
 :root {
@@ -44,6 +44,7 @@ body {
   color: var(--cor-texto);
   background-color: var(--cor-fundo);
   margin: 0;
+  font-family: "Oswald", sans-serif;
 }
 
 main h2 {
