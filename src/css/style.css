@@ -344,3 +344,8 @@ nav#menu a.active {
 .slideshow-container {
     margin-bottom: 10rem;
 }
+
+footer {
+    padding: 3rem;
+    font-size: 2rem;
+}
