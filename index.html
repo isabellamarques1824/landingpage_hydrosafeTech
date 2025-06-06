@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HydroSafe Tech</title>
+    <link rel="stylesheet" href="src/css/style.css">
+    <meta name="description" content="Projeto de monitoramento e analises de enchentes.">
+    <meta name="keywords" content="enchentes, rios, cidades, ajuda, projeto, tecnologia">
+</head>
+<body>
+    <header>
+        <div class="barrafixa">
+            <button onclick="setTheme('padrao')">Tema Padrão</button>
+            <button onclick="setTheme('claro')">Tema Claro</button>
+            <button onclick="setTheme('escuro')">Tema Escuro</button>
+            <button id="menu-btn" class="menu-btn">☰</button>
+            <nav id="menu" class="menu">
+                <a href="#problema">O problema</a>
+                <a href="#tecnologias">Tecnologias</a>
+                <a href="#objetivo">objetivo</a>
+                <a href="#publico">Público-alvo</a>
+                <a href="#beneficios">Benefícios</a>
+                <a href="#diaadia">Impacto no dia a dia</a>
+                <a href="#webdev">Quiz e contato</a>
+            </nav>
+        </div>
+        <div class="logo">
+            <img src="src/assets/imgs/logo.png" alt="Logo">
+            <h2>O poder de salvar vidas por meio da tecnologia acessível</h2>
+            <p>A ausência de monitoramento acessível agrava o impacto em comunidades vulneráveis.</p>
+            <h2 class="entenda">Entenda melhor ↓</h2>
+        </div>
+    </header>
+    <main>
+
+        <section id="problema">
+            <h2> O problema</h2>
+            <div class="secoes">
+                <div class="text">
+                    <p>Enchentes são frequentes no Brasil 
+                        e causam grandes prejuízos, especialmente em regiões com pouca infraestrutura e monitoramento.</p>
+                    <p>Falta de alertas antecipados coloca vidas em risco. 
+                        Sem dados claros, é difícil planejar evacuação e reduzir os danos.</p>
+                </div>
+                <img src="src/assets/imgs/enchente.png" alt="Imagem ilustrativa - enchentes" class="imgproblem">
+            </div>
+        </section>
+
+
+        <section id="tecnologias">
+            <h2>Tecnologias utilizadas</h2>
+            <div class="secoes">
+                <div class="text">
+                    <p>Usamos sensores, Arduino, Python e matemática para prever riscos de enchente</p>
+                    <p>Integramos tecnologia física e digital para garantir precisão e acessibilidade</p>
+                </div>
+                <div class="imagem">
+                    <img src="src/assets/imgs/tecnologias.png" alt="Imagem ilustrativa - globo tecnológico" class="globo">
+                </div>
+            </div>
+        </section>
+
+
+
+        <section id="objetivo">
+            <h2>Nosso objetivo</h2>
+            <div class="secoes">
+                <div class="text">
+                    <p>Prevenir tragédias por meio de alertas precoces baseados em dados confiáveis</p>
+                    <p>Democratizar o acesso à segurança ambiental com tecnologia de baixo custo</p>
+                </div>
+                <img src="src/assets/imgs/objetivo.png" alt="Imagem ilustrativa - objetivo">
+            </div>
+        </section>
+
+
+        <section id="publico">
+            <h2>Público-alvo</h2>
+            <div class="secoes">
+                <div class="text">
+                    <p>Comunidades urbanas e rurais com infraestrutura precária e alto risco de enchente</p>
+                    <p>Gestores públicos, ONGs e cidadãos preocupados com prevenção ambiental</p>
+                </div>
+                <img src="src/assets/imgs/publicoalvo.png" alt="Imagem ilustrativa - publico-alvo" class="imgproblem">
+            </div>
+        </section>
+
+
+        <section id="beneficios">
+            <h2>Benefícios</h2>
+            <div class="secoes">
+                <div class="text">
+                    <p>Sistema econômico, fácil de usar e replicável em diferentes regiões do país.</p>
+                    <p>Interface intuitiva, alertas em tempo real e base científica confiável.</p>
+                </div>
+                <img src="src/assets/imgs/beneficios.png" alt="Imagem ilustrativa - Benefícios">
+            </div>
+        </section>
+
+        <section id="diaadia">
+            <h2>Como a solução ajudará no dia a dia dos usuários</h2>
+             <div class="secoes">
+                <div class="text">
+                    <p>Usuários receberão alertas claros sobre riscos iminentes de enchente.</p>
+                    <p>A ferramenta auxilia moradores e autoridades no planejamento de rotas seguras e tomada de decisões preventivas.</p>
+                </div>
+                <img src="src/assets/imgs/diaadia.png" alt="Imagem ilustrativa - Dia a dia ">
+            </div>
+        </section>
+
+        <section id="webdev">
+            <h2>Tecnologia e inovação: juntos para prevenir enchentes e proteger vidas.</h2>
+            <div class="slideshow-container">
+                <div class="slide fade">
+                    <img src="src/assets/imgs/enchente1.jpeg" alt="Tema 1" />
+                </div>
+                <div class="slide fade">
+                    <img src="src/assets/imgs/enchente2.jpg" alt="Tema 2" />
+                </div>
+                <div class="slide fade">
+                    <img src="src/assets/imgs/enchente3.jpg" alt="Tema 3" />
+                </div>
+                <a class="prev">&#10094;</a>
+                <a class="next">&#10095;</a>
+            </div>
+            <h2>Quiz interativo e contato </h2>
+            <div id="quizecontato">
+                <div id="quiz-box">
+                    <div id="quiz-content">
+                        <p id="question">Carregando pergunta...</p>
+                        <div id="answers"></div>
+                        <button id="next-btn" class="hidden">Próxima</button>
+                    </div>
+                </div>
+                <div id="caixinha-contato">
+                    <h3>Fale com a gente</h3>
+                    <form id="form-contato">
+                        <input type="text" id="nome" placeholder="Seu nome" required>
+                        <input type="email" id="email" placeholder="Seu e-mail" required>
+                        <textarea id="mensagem" placeholder="Mensagem" required></textarea>
+                        <button type="submit">Enviar</button>
+                        <p id="mensagem-status"></p>
+                    </form>
+                </div>
+            </div>
+        </section>
+    </main>
+    <footer>
+        <p>© 2025 HydroSafe Tech. Todos os direitos reservados.</p>
+    </footer>
+    <script src="src/js/script.js"></script>
+</body>
+</html>
