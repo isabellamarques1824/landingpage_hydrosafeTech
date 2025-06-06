@@ -33,3 +33,7 @@ A página suporta **três temas**:
 - 📊 Slideshow de dados/imagens
 - 💬 Caixinha de contato funcional
 - ❓ Quiz interativo
+
+## link do site:
+
+https://isabellamarques1824.github.io/landingpage_hydrosafeTech/
