@@ -376,30 +376,53 @@ a:hover {
 
 
 @media (max-width: 768px) {
-  .text {
-    width: 100%;
-    margin: 1rem;
-    font-size: 1.5rem;
-  }
+    .text {
+        width: 100%;
+        margin: 1rem 0;
+    }
+    
+    .imgproblem {
+        width: 100%;
+        margin: 1rem 0;
+    }
 
-  .imgproblem {
-    width: 100%;
-    margin: 1rem 0;
-  }
+    main h2 {
+        font-size: 1.8rem;
+        margin: 1rem;
+    }
 
-  main h2 {
-    font-size: 2.5rem;
-    margin: 2rem;
-  }
-#quiz-box, #caixinha-contato {
-    width: 90%;
-    margin: 1rem auto;
-    position: static;
-  }
+    #quiz-box, #caixinha-contato {
+        width: 90%;
+        margin: 1rem auto;
+        position: static;
+    }
 
-  .menu {
-    width: 90vw;
-    right: 5vw;
-  }
+    .menu {
+        width: 90vw;
+        right: 5vw;
+    }
+
+    .imagem {
+        width: 100%;
+        height: auto;
+        justify-content: center;
+    }
+
+    .globo {
+        object-position: center;
+    }
+
+    .text p {
+        margin: 1rem;
+    }
+
+    .slideshow-container {
+        max-width: 100%;
+    }
+
+    .slide img {
+        width: 100%;
+        height: auto;
+    }
 }
 
