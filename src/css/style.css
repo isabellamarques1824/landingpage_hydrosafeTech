@@ -1,5 +1,10 @@
 @import url('https://fonts.googleapis.com/css2?family=Oswald:wght@200..700&display=swap');
 
+* {
+  box-sizing: border-box;
+  max-width: 100%;
+}
+
 :root {
   --cor-fundo: #9ab0ca;
   --cor-texto: #03142f;
