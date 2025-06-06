@@ -58,14 +58,14 @@ header {
 
 
 main h2 {
-  font-size: 3.5rem;
+  font-size: 2.5rem;
   background-color: var(--cor-destaque);
   color: var(--cor-destaque-texto);
   display: inline-block;
   padding: 0.5rem 1rem;
   border-radius: 1rem;
   font-weight: bold;
-  margin: 3rem;
+  margin: 2.5rem;
 }
 
 .secoes {
@@ -75,7 +75,7 @@ main h2 {
 }
 
 
-.imgproblem,
+
 .text {
   flex: 1 1 300px;
   max-width: 100%;
@@ -90,17 +90,21 @@ main h2 {
 .text {
   font-size: 2rem;
   width: 50%;
-  margin: 2rem;
+  margin: 1.5rem;
 }
 
 .text p {
   margin: 5rem;
 }
 
+section img {
+    width: 25rem;
+}
+
 
 .imagem {
   width: 70%;
-  height: 50rem;
+  height: 30rem;
   overflow: hidden;
   display: flex;
   justify-content: flex-end;
@@ -183,7 +187,7 @@ nav#menu a.active {
 
 .slideshow-container {
   position: relative;
-  max-width: 600px;
+  width: 800px;
   margin: auto;
   overflow: hidden;
   border-radius: 8px;
@@ -192,7 +196,6 @@ nav#menu a.active {
 
 .slideshow-container {
   max-width: 100%;
-  width: 100%;
   margin-bottom: 4rem;
 }
 
