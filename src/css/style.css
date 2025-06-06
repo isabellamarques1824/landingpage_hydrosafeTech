@@ -1,6 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Oswald:wght@200..700&display=swap');
 
-/* Tema padrão */
 :root {
   --cor-fundo: #9ab0ca;
   --cor-texto: #03142f;
@@ -12,7 +11,6 @@
   --cor-caixa-clara: #e0f4ff;
 }
 
-/* Tema claro */
 [data-theme="claro"] {
   --cor-fundo: #fefefe;
   --cor-texto: #222222;
@@ -24,7 +22,6 @@
   --cor-caixa-clara: #e6f7ff;
 }
 
-/* Tema escuro */
 [data-theme="escuro"] {
   --cor-fundo: #121212;
   --cor-texto: #f0f0f0;
@@ -36,41 +33,71 @@
   --cor-caixa-clara: #1f2d3d;
 }
 
-header {
-    border: solid var(--cor-borda);
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
 }
 
 body {
   color: var(--cor-texto);
   background-color: var(--cor-fundo);
   margin: 0;
+  padding-top: 60px;
   font-family: "Oswald", sans-serif;
 }
+
+header {
+  border: solid var(--cor-borda);
+  padding: 0.5rem 1rem;
+}
+
 
 main h2 {
   font-size: 3.5rem;
   background-color: var(--cor-destaque);
   color: var(--cor-destaque-texto);
-  display: inline-block;     
-  padding: 0.5rem 1rem;      
-  border-radius: 1rem;       
-  font-weight: bold; 
+  display: inline-block;
+  padding: 0.5rem 1rem;
+  border-radius: 1rem;
+  font-weight: bold;
   margin: 3rem;
 }
 
+
 main section {
-    border: solid var(--cor-borda);
+  border: solid var(--cor-borda);
 }
 
 .secoes {
   display: flex;
+  flex-wrap: wrap; 
+  justify-content: center;
+}
+
+
+.imgproblem,
+.text {
+  flex: 1 1 300px;
+  max-width: 100%;
+  margin: 1rem;
 }
 
 .imgproblem {
   width: 30rem;
-  margin: 2rem;
   border-radius: 3rem;
 }
+
+.text {
+  font-size: 2rem;
+  width: 50%;
+  margin: 2rem;
+}
+
+.text p {
+  margin: 5rem;
+}
+
 
 .imagem {
   width: 70%;
@@ -84,19 +111,10 @@ main section {
   width: 100%;
   height: 100%;
   object-fit: cover;
-  object-position: left; 
+  object-position: left;
   display: block;
 }
 
-.text {
-  font-size: 2rem;
-  margin: 2rem;
-  width: 50%;
-}
-
-.text p {
-  margin: 5rem;
-}
 
 .logo {
   width: 100%;
@@ -112,7 +130,10 @@ main section {
   margin: 2rem;
 }
 
-/* Menu Hamburguer */
+#webdev {
+  margin-top: 10rem;
+}
+
 .barrafixa {
   position: fixed;
   top: 0;
@@ -126,11 +147,12 @@ main section {
   z-index: 1000;
 }
 
-nav#menu a.active {
-  color: var(--cor-destaque-texto);
-  background-color: var(--cor-destaque);
-  font-weight: bold;
-  border-bottom: 2px solid var(--cor-botao);
+.menu-btn {
+  font-size: 2rem;
+  background: none;
+  border: none;
+  cursor: pointer;
+  display: block;
 }
 
 .menu {
@@ -140,7 +162,7 @@ nav#menu a.active {
   background-color: var(--cor-fundo);
   position: absolute;
   font-size: 2rem;
-  top: 50px;  
+  top: 50px;
   right: 1rem;
   padding: 1.5rem 2rem;
   box-shadow: 0 4px 12px rgba(0,0,0,0.15);
@@ -149,25 +171,30 @@ nav#menu a.active {
 }
 
 .menu.active {
-  display: flex; 
+  display: flex;
 }
 
-.menu-btn {
-  font-size: 2rem;
-  background: none;
-  border: none;
-  cursor: pointer;
-  display: block; 
+nav#menu a.active {
+  color: var(--cor-destaque-texto);
+  background-color: var(--cor-destaque);
+  font-weight: bold;
+  border-bottom: 2px solid var(--cor-botao);
 }
 
-/* Imagens slideshow */
+
 .slideshow-container {
   position: relative;
-  max-width: 600px; 
+  max-width: 600px;
   margin: auto;
   overflow: hidden;
   border-radius: 8px;
   box-shadow: 0 0 10px rgba(0,0,0,0.3);
+}
+
+.slideshow-container {
+  max-width: 100%;
+  width: 100%;
+  margin-bottom: 4rem;
 }
 
 .slide {
@@ -218,7 +245,7 @@ nav#menu a.active {
   right: 10px;
 }
 
-/* quiz */
+
 #quiz-box {
   bottom: 20px;
   right: 20px;
@@ -236,6 +263,7 @@ nav#menu a.active {
 #quiz-box p {
   font-weight: bold;
   margin-bottom: 10px;
+  font-size: 1.2rem;
 }
 
 #quiz-box button {
@@ -246,6 +274,7 @@ nav#menu a.active {
   color: rgb(0, 0, 0);
   border-radius: 5px;
   cursor: pointer;
+  font-size: 1rem;
 }
 
 #quiz-box button:hover {
@@ -262,6 +291,7 @@ nav#menu a.active {
   border: 1px solid var(--cor-botao);
   border-radius: 5px;
   cursor: pointer;
+  font-size: 1rem;
 }
 
 #answers button:hover {
@@ -272,7 +302,7 @@ nav#menu a.active {
   display: none;
 }
 
-/* Contato */
+
 #caixinha-contato {
   bottom: 20px;
   right: 20px;
@@ -322,31 +352,49 @@ nav#menu a.active {
   cursor: pointer;
   font-weight: bold;
   transition: background 0.3s;
+  font-size: 1rem;
 }
 
 #form-contato button:hover {
-  background-color: var(--cor-botao-hover);
+  background-color: var(--cor-botao);
 }
 
-#mensagem-status {
-  font-size: 12px;
-  text-align: center;
+a {
+  text-decoration: none;
+  color: var(--cor-botao);
+  font-weight: 600;
 }
 
-#quizecontato {
-  display: flex;
-  gap: 5rem;
+a:hover {
+  color: var(--cor-botao-hover);
 }
 
-#webdev {
-    margin-top: 10rem;
+
+@media (max-width: 768px) {
+  .text {
+    width: 100%;
+    margin: 1rem;
+    font-size: 1.5rem;
+  }
+
+  .imgproblem {
+    width: 100%;
+    margin: 1rem 0;
+  }
+
+  main h2 {
+    font-size: 2.5rem;
+    margin: 2rem;
+  }
+#quiz-box, #caixinha-contato {
+    width: 90%;
+    margin: 1rem auto;
+    position: static;
+  }
+
+  .menu {
+    width: 90vw;
+    right: 5vw;
+  }
 }
 
-.slideshow-container {
-    margin-bottom: 10rem;
-}
-
-footer {
-    padding: 3rem;
-    font-size: 2rem;
-}
